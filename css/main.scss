@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap');
+
+$degradado: linear-gradient(60deg, rgba(5, 99, 120, 0.9) 10%, rgba(230, 33, 106, 0.6) 90%);
+$fondo_ppal: rgba(5, 99, 120, 0.9);
+$color_sec: rgba(230, 33, 106, 0.879);
+$fuente_ppal: "Quicksand", sans-serif;
+$fuente_sec: "Bebas Neue", sans-serif;;
+
+body {
+  font-family: $fuente_ppal;
+  font-size: 1.15em;
+}
+#logo {
+  width: 190px;
+  height: 53px;
+  background: url(../svg/inlogtic-logo-bn.svg) center no-repeat;
+}
+#logo-color {
+  width: 100%;
+  height: 260px;
+  background: url(../svg/inlogtic-logo.svg) center no-repeat;
+  margin: 1rem auto 0;
+  @media screen and (min-width: 992px) {
+    height: 270px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 330px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
+}
+#logo-color-r {
+  width: 500px;
+  height: 120px;
+  background: url(../svg/inlogtic-logo.svg) center no-repeat;
+  margin: 2rem auto 0;
+  @media screen and (max-width: 576px) {
+    width: 320px;
+    height: calc(320px / 4);
+  }
+}
+.navbar a {
+  color: white !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-toggler, .navbar-toggler:focus {
+  border: none;
+  box-shadow: unset;
+}
+.navbar-toggler {
+  i {
+    color: white;
+    font-size: 2rem;
+  }
+}
+.navbar-brand {
+  font-size: 1rem;
+}
+.fondo {
+  background: $degradado, url(../img/fondo.jpg) no-repeat;
+  background-size: cover;
+}
+.nav-link {
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    margin: 0 2rem;
+    padding: 0 .95em;
+  }
+}
+h3 {
+  font-family: $fuente_sec;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $fondo_ppal;
+  i {
+    color: transparentize($color_sec, 0.3);
+  }
+}
+.asistentes {
+  thead {
+    td {
+      width: 33.3333%;
+      i {
+        font-size: 3.5rem;
+        color: transparentize($fondo_ppal, 0.35);
+      }
+    }
+  }
+  th {
+    font-family: $fuente_sec;
+    font-size: 1.3rem;
+    color: $color_sec;
+  }
+  td, th {
+    text-align: center;
+    font-weight: bold;
+  }
+  td {
+    font-size: 3rem;
+    color: $fondo_ppal;
+  }
+}
+.h1 {
+  color: white;
+  font-family: $fuente_sec;
+}
+.faltan {
+  width: 100%;
+  color: white;
+  @media screen and (min-width: 768px) {
+    width: 75%;
+  }
+  .h1 {
+    text-align: center;
+  }
+  tbody {
+    td {
+      width: 25%;
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(255,255,255,0.7);
+      color: $fondo_ppal;
+      @media screen and (max-width: 1200px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  tfoot {
+    td {
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 0.8rem;
+      @media screen and (max-width: 576px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+.btn-ppal {
+  background: $degradado;
+  border: none;
+  border-radius: 0;
+  color: white;
+  padding: 1rem 2rem;
+}
+.fondo_banner {
+  background: url(../img/fondo2.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+  height: 300px;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 992px) {
+    height: 550px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 700px;
+  }
+}
+.fondo_banner_r {
+  background: url(../img/fondo2.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.foot {
+  font-size: 0.8em;
+}
+figure {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid $fondo_ppal;
+  h3 {
+    text-transform: uppercase;
+    background: $degradado;
+    i {
+      font-size: 2em;
+      color: transparentize($color_sec, 0.3) !important;
+    }
+  }
+  h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $fondo_ppal;
+    text-transform: uppercase;
+    span {
+      i {
+        font-size: 1.5rem;
+        color: transparentize($fondo_ppal, 0.25);
+      }
+    }
+  }
+  h6 {
+    text-transform: capitalize;
+    font-size: 0.7em;
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    border-left: 4px solid $fondo_ppal;
+    padding-left: 1rem;
+    font-size: 0.9em;
+  }
+}
+.iconos {
+  i {
+    font-size: 2em;
+    color: transparentize($color_sec, 0.3);
+  }
+}
