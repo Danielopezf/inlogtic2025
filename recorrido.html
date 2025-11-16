@@ -10,52 +10,66 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col fondo">
-				<div class="container">
-					<div class="row me-0">
-						<div class="col-md-2 d-flex justify-content-center justify-content-md-start align-items-center py-4 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
-						</div>
-						<div class="col-md-10 d-md-flex justify-content-md-end align-items-center pe-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-md">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-md-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="bi bi-list"></i>
-									</button>
-									<div class="collapse navbar-collapse" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0">
-											<li class="nav-item">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="recorrido.html">Recorrido</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link me-0 pe-0" href="index.html#mantenimiento">Mantenimiento</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<!-- Fin Navbar -->
+	<header class="container position-relative">
+		<div class="row position-absolute top-0 w-100">
+			<div class="col-md-2 d-flex justify-content-center justify-content-md-start align-items-center py-4 text-white">
+				<a href="index.html" class="text-white text-decoration-none">
+					<div id="logo"></div>
+				</a>
+			</div>
+			<div class="col-md-10 d-md-flex justify-content-md-end align-items-center pe-0">
+				<!-- Inicio Navbar -->
+				<nav class="navbar navbar-expand-md">
+					<div class="container-fluid pe-0">
+						<a class="navbar-brand d-md-none" href="#">Menú</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="bi bi-list"></i>
+							</button>
+						<div class="collapse navbar-collapse" id="navbarBasic">
+							<ul class="navbar-nav ms-auto mb-0 mb-xl-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="recorrido.html">Recorrido</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link me-0 pe-0" href="#mantenimiento">Mantenimiento</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col text-white text-center fondo_banner_2 py-5">
-              <h1 class="pt-5">1a Feria del conocimiento - CGMLTI - SENA</h1>
-							<h2 class="mb-0">Programación de ambientes y proyectos</h2>
-						</div>
-					</div>
-				</div>
+				</nav>
+				<!-- Fin Navbar -->
 			</div>
 		</div>
 	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col p-0">
+				<!-- Inicio carrusel -->
+				 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="img/inlogtic-2025-s1.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						<img src="img/inlogtic-2025-s1.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!-- Fin carrusel -->
+			</div>
+		</div>
+	</div>
 	<main class="container">
     <div class="row">
 			<div class="col-md-4 col-lg-3">
@@ -64,139 +78,301 @@
 			<div class="col-md-8 col-lg-9 d-md-flex flex-column justify-content-end">
 				<h3 class="text-center text-md-start mt-3 mt-md-4">Categorías</h3>
 				<div class="row mt-2 iconos">
+          <div class="col text-center"><a href="#videojuegos"><i class="bi bi-controller"></i></a></div>
           <div class="col text-center"><a href="#sonido"><i class="bi bi-soundwave"></i></a></div>
-          <div class="col text-center"><a href="#analisisd"><i class="bi bi-braces-asterisk"></i></a></div>
-          <div class="col text-center"><a href="#redes"><i class="bi bi-hdd-network"></i></a></div>
+          <div class="col text-center"><a href="#infra"><i class="bi bi-hdd-network"></i></a></div>
+          <div class="w-100 d-md-none"></div>
           <div class="col text-center"><a href="#analitica"><i class="bi bi-braces"></i></a></div>
-          <div class="col text-center"><a href="#multimedia"><i class="bi bi-display"></i></a></div>
-          <div class="w-100 d-lg-none"></div>
           <div class="col text-center"><a href="#audiovisual"><i class="bi bi-film"></i></a></div>
           <div class="col text-center"><a href="#3d"><i class="bi bi-badge-3d"></i></a></div>
-          <div class="col text-center"><a href="#analisisds"><i class="bi bi-braces-asterisk"></i></a></div>
-          <div class="col text-center"><a href="#videojuegos"><i class="bi bi-controller"></i></a></div>
-          <div class="col text-center"><a href="#mantenimiento"><i class="bi bi-pc-display"></i></a></div>
         </div>
 			</div>
 		</div>
     
 		<div class="row">
+      <div class="col-12 pt-4">
+        <h3 class="text-center pt-3" id="videojuegos"><i class="bi bi-controller"></i> Videojuegos</h3>
+      </div>
+      <div class="col">
+        <figure>
+          <h3 class="badge">Ambiente 511</h3>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#511"><i class="bi bi-geo-alt-fill"></i></a>
+          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Berry Hills</h4>
+          <p>Berry Hills es un juego en 3D donde controlas a una adorable oveja que cuida su colorido vivero. Riega flores, recoge frutas y alimenta mariposas… hasta que el jardín revela su oscuro secreto. A medida que el día avanza, la calma se convierte en horror y tus tareas en algo mucho más siniestro.</p>
+          <h6>25, 26 y 27 de noviembre - Mañana, tarde y noche</h6>
+        </figure>
+        <!-- Inicio modal -->
+         <div class="modal" tabindex="-1" id="511">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBasicLabel">Ambiente 511</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/511.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin modal -->
+        <figure>
+          <h3 class="badge">Ambiente 511</h3>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#511"><i class="bi bi-geo-alt-fill"></i></a>
+          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Echoes Of Light</h4>
+          <p>Echoes of Light es un juego móvil en 2D en el que el jugador controla a Kael dentro de laberintos generados de forma aleatoria. Cada nivel aumenta su dificultad con laberintos que se vuelven más grandes y complejos a medida que avanzas. El objetivo es llegar al máximo nivel posible, encontrando la salida en cada nivel mientras usas la luz para guiarte a través de la oscuridad.</p>
+          <h6>25, 26 y 27 de noviembre - Mañana, tarde</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente 511</h3>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#511"><i class="bi bi-geo-alt-fill"></i></a>
+          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Simulador Extintores</h4>
+          <p>Aprende a apagar incendios como nunca antes! <br> Con esta aplicación de realidad mixta, podrás practicar el uso de extintores en entornos reales, enfrentando simulaciones interactivas y seguras. <br>
+          Una experiencia educativa, inmersiva y llena de acción que transforma el aprendizaje en una aventura.</p>
+          <h6>25, 26 y 27 de noviembre - Mañana, tarde y noche</h6>
+        </figure>
+      </div>
       <div class="col-12 pt-5">
-        <h3 class="text-center pt-3" id="sonido"><i class="bi bi-soundwave"></i> Sonido</h3>
+        <h3 class="text-center pt-3" id="sonido"><i class="bi bi-soundwave"></i> Producción de sonido</h3>
       </div>
       <div class="col">
          <figure>
           <h3 class="badge">Ambiente 107</h3>
-          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Podcast de Manipulación de Drones: Explorando el Futuro del Sonido Inmersivo en la Industria Audiovisual</h4>
-          <p>Este podcast presenta una inmersión en el control avanzado de drones, destacando técnicas de sonido espacial y aplicaciones de audio 3D. En el marco del “Proyecto de Actualización del Ambiente de Formación Sonora’, SENNOVA impulsa esta propuesta que conecta tecnología de punta con creatividad auditiva, redefiniendo el potencial de los drones en entornos audiovisuales.</p>
-          <h6>Sebastian Gonzalez, Sharit Pineda, Nicolas santiago</h6>
+          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Doblaje</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem cupiditate, voluptates asperiores veritatis enim. Maiores, accusamus saepe enim dignissimos atque dolore, nobis voluptas quisquam, doloribus nostrum sunt magnam provident.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
          </figure>
          <figure>
           <h3 class="badge">Ambiente 107</h3>
-          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Apoyo a guías de aprendizaje "Comunicación Comercial" Clinicas de ventas</h4>
-          <p>Contenido sonoro digital inmersivo, como herramientas de apoyo a la forrmación. Producto de investigación SENNOVA</p>
-          <h6>Sebastian Gonzalez, Sharit Pineda, Nicolas santiago</h6>
+          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Foley</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem cupiditate, voluptates asperiores veritatis enim. Maiores, accusamus saepe enim dignissimos atque dolore, nobis voluptas quisquam, doloribus nostrum sunt magnam provident.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente 107</h3>
+          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Musicalización</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem cupiditate, voluptates asperiores veritatis enim. Maiores, accusamus saepe enim dignissimos atque dolore, nobis voluptas quisquam, doloribus nostrum sunt magnam provident.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente 107</h3>
+          <h4><span class="me-2"><i class="bi bi-soundwave"></i></i></span>Exposición proyectos</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem cupiditate, voluptates asperiores veritatis enim. Maiores, accusamus saepe enim dignissimos atque dolore, nobis voluptas quisquam, doloribus nostrum sunt magnam provident.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
          </figure>
       </div>
       <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="analisisd"><i class="bi bi-braces-asterisk"></i> Analisis y Desarrollo de Software</h3>
+        <h3 class="text-center pt-3" id="infra"><i class="bi bi-hdd-network"></i> Infraestructura</h3>
       </div>
       <div class="col">
         <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Proyecto Arduinos</h4>
+          <h3 class="badge">Ambiente 609</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Mantenimiento de equipos de computo (Portátiles)</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha 012345:</span> lorem ipsum, dolor sit amet, consectetur elit</h6>
-         </figure>
-      </div>
-      <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="redes"><i class="bi bi-hdd-network"></i> Redes</h3>
-      </div>
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 409</h3>
-          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Proyecto WordSkill</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha: 2687392</span> - Erwin Santiago Guevara Guancha</h6>
-         </figure>
-         <figure>
-          <h3 class="badge">Ambiente 409</h3>
-          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Infraestructura e Interconexión de Redes WAN y LAN con Cisco</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha: 2502622</span> - Rafael Alejandro Hernández Falla</h6>
-         </figure>
-         <figure>
-          <h3 class="badge">Ambiente 409</h3>
-          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Ciberseguridad EternalBlue</h4>
-          <p>Tendrás la posibilidad de acceder a la simulación de un ataque en tiempo real que ilustra como los hackers se pueden apropiar de tu cámara, teclado, acceso a contraseñas y todo lo que tienes en tu computador; de esta manera, podrás comprender todos los riesgos asociados a los sistemas vulnerables.</p>
-          <h6><span>Ficha: 2895550</span> - David Santiago Hernández Ramírez</h6>
+          <h6>Lorem ipsum dolor sit amet.</h6>
          </figure>
          <figure>
           <h3 class="badge">Ambiente 410</h3>
-          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Mundo IoT: Explorando la Automatización Inteligente – Maqueta Interactiva para un Futuro Conectado</h4>
-          <p>Sumérgete en un entorno interactivo donde la tecnología IoT cobra vida, automatizando funciones críticas de monitoreo y respuesta en tiempo real. Esta maqueta inteligente recrea escenarios de automatización avanzada, conectividad, y eficiencia, llevando el Internet de las Cosas al siguiente nivel.</p>
-          <h6><span>Ficha 2898745:</span> - Bairon Dario Triviño Martinez, Karen Juliana Sanchez Peña,  Karen Tatiana Sanchez Tobar
-            <br>
-            <span>Ficha 2895573:</span> - Jhon Nicolas Mendez Cortes, Marbyn Adriana Leon Alcantar, Miguel Angel Querubin Malagon
-            <br>
-            <span>CCTV:</span> - Jhonatan Morales Rodriguez, Karol Tatiana Riaño Beltran, Johan Steeven Perez Camacho, Jefrey Sneider Manrique Gonzalez, Carlos Mario Benitez Agamez</h6>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Ciberseguridad - Páginas WEB - Santiago MNEMO</h4>
+          <p>Ciberseguridad aplicado en páginas WEB</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente 410</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Ciberseguridad - Santiago MNEMO</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam cumque excepturi amet animi, soluta saepe voluptate debitis labore. Facilis omnis tempora earum voluptas natus voluptatem odio ipsum, aliquam deleniti?</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente 410</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Ciberseguridad - Senasoft/WorldSkills</h4>
+          <p>Hacking para principiantes</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Ciberseguridad - Campaña</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor vero illo fuga, suscipit quaerat maiores eligendi ratione culpa reprehenderit laboriosam error animi veritatis! Eligendi eum consequuntur explicabo accusamus distinctio!</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Taller creación de servidor de base de datos</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor vero illo fuga, suscipit quaerat maiores eligendi ratione culpa reprehenderit laboriosam error animi veritatis! Eligendi eum consequuntur explicabo accusamus distinctio!</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Datacenter</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Datacenter estudiantil</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor vero illo fuga, suscipit quaerat maiores eligendi ratione culpa reprehenderit laboriosam error animi veritatis! Eligendi eum consequuntur explicabo accusamus distinctio!</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ágora B</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Cableado estructurado <br> Reto Nacional Worldskills 2025</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor vero illo fuga, suscipit quaerat maiores eligendi ratione culpa reprehenderit laboriosam error animi veritatis! Eligendi eum consequuntur explicabo accusamus distinctio!</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+         </figure>
+         <figure>
+          <h3 class="badge">Ambiente 608</h3>
+          <h4><span class="me-2"><i class="bi bi-hdd-network"></i></span>Monitoreo ambiental y tecnológico</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor vero illo fuga, suscipit quaerat maiores eligendi ratione culpa reprehenderit laboriosam error animi veritatis! Eligendi eum consequuntur explicabo accusamus distinctio!</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
          </figure>
       </div>
       <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="analitica"><i class="bi bi-braces"></i> Analítica y Fábrica de Software</h3>
+        <h3 class="text-center pt-3" id="analitica"><i class="bi bi-braces"></i> Software</h3>
       </div>
       <div class="col">
         <figure>
-          <h3 class="badge">Ambiente 413</h3>
-          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto Caso de datos abiertos</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha 012345:</span> lorem ipsum, dolor sit amet, consectetur elit</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius nemo sit ipsam, harum natus quasi cum quia quam esse facilis laudantium! Ex, distinctio. Velit perspiciatis molestias qui incidunt minima?</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 413</h3>
-          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto Analisis del saber 11 Icfes</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha 012345:</span> lorem ipsum, dolor sit amet, consectetur elit</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 2</h4>
+          <p>Necessitatibus eos modi asperiores perspiciatis sapiente laudantium optio excepturi, quaerat provident labore, rerum, iure possimus natus itaque debitis quia laborum commodi neque dolores dolorem omnis enim obcaecati? Qui, ipsum voluptatum.</p>
+          <h6>Corrupti minima odio beatae recusandae?</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 413</h3>
-          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto Evaluacion de instructores</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha 012345:</span> lorem ipsum, dolor sit amet, consectetur elit</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 3</h4>
+          <p>Vero dolorem quo exercitationem ad eveniet nulla voluptas laudantium ea sequi architecto laborum velit accusamus a, quia deleniti eos natus quos facere dicta iusto voluptates numquam libero necessitatibus. Totam, nisi?</p>
+          <h6>Suscipit distinctio eaque laborum. Quam?</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 413</h3>
-          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Encuestas Fabrica de Software</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, debitis sed, doloribus hic eaque, sint ducimus deleniti enim laudantium et ullam neque aut ipsa expedita cupiditate atque eius ipsum harum.</p>
-          <h6><span>Ficha 012345:</span> lorem ipsum, dolor sit amet, consectetur elit</h6>
-        </figure>
-      </div>
-      <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="multimedia"><i class="bi bi-display"></i> Multimedia</h3>
-      </div>
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 414</h3>
-          <h4><span class="me-2"><i class="bi bi-display"></i></span>Recorrido Virtual CGMLTI: Explorando Espacios de Formación con Tecnología de Inmersión – Versión 1.0</h4>
-          <p>Descubre el futuro de los recorridos virtuales con esta innovadora web. Diseñada para desarrolladores y entusiastas de la tecnología, la versión 1.0 del Recorrido Virtual CGMLTI ofrece una experiencia inmersiva, permitiendo a los usuarios explorar cada rincón del centro de formación a través de vistas panorámicas, navegación interactiva y detalles en alta resolución. Lleva la visualización de espacios a otro nivel y aprovecha la última tecnología en diseño web para crear entornos virtuales envolventes.</p>
-          <h6><span>Ficha 2184553:</span> Aprendices ficha completa</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 4</h4>
+          <p>Sit assumenda alias non amet exercitationem rerum reprehenderit, nulla, aliquam sapiente, perspiciatis aliquid ex dolore perferendis necessitatibus ipsum in natus soluta consequatur ducimus dolores nostrum nesciunt laudantium! Perferendis, non deserunt.</p>
+          <h6>Illum, quidem! Officiis, aliquam cumque.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 414</h3>
-          <h4><span class="me-2"><i class="bi bi-display"></i></span>Tressé</h4>
-          <p>Sitio web para la venta de productos tejidos en trapillo, donde los usuarios pueden utilizar realidad aumentada para previsualizar los productos en su entorno antes de realizar la compra</p>
-          <h6><span>Ficha 2895566:</span> Hilary Orozco</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 5</h4>
+          <p>Labore pariatur obcaecati numquam, culpa, quo aut voluptatum eius rem nostrum officiis illum inventore? Dolore nam, repudiandae ut dolor eveniet sit sapiente doloribus, doloremque perspiciatis incidunt laboriosam numquam at facere.</p>
+          <h6>Error, modi delectus! Distinctio, ea.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 414</h3>
-          <h4><span class="me-2"><i class="bi bi-display"></i></span>Proyecto 3</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem blanditiis odio eum architecto culpa! Blanditiis aliquid unde nihil sit!</p>
-          <h6><span>Ficha 2895566:</span> Lorem, ipsum dolor.</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 6</h4>
+          <p>Laudantium, possimus? Eveniet recusandae accusantium quo nihil animi labore? Temporibus harum debitis ut magni neque est, illo, rerum maxime dolorum praesentium nihil enim animi. Tenetur harum a aspernatur provident in!</p>
+          <h6>Eligendi magni quia commodi necessitatibus?</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 414</h3>
-          <h4><span class="me-2"><i class="bi bi-display"></i></span>Proyecto 4</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem blanditiis odio eum architecto culpa! Blanditiis aliquid unde nihil sit!</p>
-          <h6><span>Ficha 2895566:</span> Lorem, ipsum dolor.</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 7</h4>
+          <p>Fugiat recusandae ipsum, ratione, nulla, laudantium obcaecati rerum natus soluta harum temporibus quaerat! Itaque sapiente ab modi tenetur dolor. Natus, provident soluta non nihil et aspernatur reprehenderit ad sed vitae?</p>
+          <h6>Voluptate assumenda quod minima minus.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 8</h4>
+          <p>Tempora perspiciatis temporibus, sint unde officia sit ipsum enim doloremque repudiandae dolores quidem rerum iusto tempore veritatis quisquam officiis voluptatem aspernatur earum? Deleniti expedita quod voluptates illum aliquid, rerum inventore.</p>
+          <h6>Rem ea doloribus dignissimos impedit.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 9</h4>
+          <p>Totam tempora aliquid, inventore eligendi possimus in beatae praesentium quam saepe consequuntur sapiente minima culpa facilis dolores dignissimos nihil eum blanditiis corrupti! Quis voluptatem debitis nemo mollitia nesciunt voluptatibus temporibus.</p>
+          <h6>At voluptates sed illo ea.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 10</h4>
+          <p>Autem incidunt laboriosam quasi inventore. Totam maxime laborum veritatis nam voluptatum mollitia sequi alias iure assumenda? Alias eos veritatis velit itaque temporibus omnis quas. Ipsa tempore ratione cum voluptas facere.</p>
+          <h6>Deserunt nulla eligendi officiis rem!</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 11</h4>
+          <p>Ab, ea accusantium quos dolorem reprehenderit fugit nam nostrum quisquam, quidem et ex corporis id numquam quaerat magnam odit laborum? Quae cupiditate corporis repellat dolore ad dignissimos illo blanditiis consectetur?</p>
+          <h6>Ea dolorem aliquam placeat atque!</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 12</h4>
+          <p>Corporis, quis mollitia. Ut cumque asperiores veritatis repellat dolorum debitis, vel, facere nesciunt ducimus deserunt eius odio sint voluptatibus? Optio minima aut architecto pariatur iste magnam facere ratione sunt omnis?</p>
+          <h6>Harum sunt a possimus sapiente!</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 13</h4>
+          <p>Dolorem fugit laboriosam molestiae non reprehenderit saepe culpa unde eligendi expedita in sed eius itaque fugiat facere odit iusto rerum modi, laborum reiciendis ipsam? Excepturi fugit beatae totam voluptate alias.</p>
+          <h6>Deleniti quis ratione quaerat dignissimos.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 14</h4>
+          <p>Doloribus, libero accusamus. Illum, voluptas expedita similique saepe amet ipsa maiores, maxime earum laudantium minima in temporibus provident! Velit quia repudiandae quis iste ullam tempore odio! Quod, labore. Fugit, cum!</p>
+          <h6>Necessitatibus expedita ipsum architecto repellendus?</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 15</h4>
+          <p>Omnis voluptatum pariatur odit rerum quod voluptates impedit culpa, ducimus eligendi ratione, facilis excepturi at repellendus fuga non quia praesentium numquam sit dolore harum. Amet voluptates quaerat quibusdam placeat esse!</p>
+          <h6>Quas nulla illum aliquam nam.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 16</h4>
+          <p>Sapiente numquam adipisci placeat nobis vero. Voluptatum ipsam iusto nobis ducimus accusamus adipisci magnam libero ab voluptatibus animi consectetur inventore explicabo earum nostrum, quam optio exercitationem, possimus deserunt vitae nemo?</p>
+          <h6>Incidunt ipsa voluptate suscipit quia?</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 17</h4>
+          <p>Maiores facere unde, eveniet laudantium tenetur pariatur, aliquid repellendus ratione quae odio fuga, iure id accusantium nihil est? Quas optio unde impedit reprehenderit id rerum veniam est, neque perferendis totam!</p>
+          <h6>Ea corporis iure enim soluta.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 18</h4>
+          <p>Debitis nihil, unde cupiditate quas quaerat tempore sed cumque minus aut consectetur fugit maxime corporis sunt suscipit, beatae, natus fuga tenetur molestiae officia. Nesciunt explicabo id a error sequi soluta.</p>
+          <h6>Hic nostrum rem esse nihil.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 19</h4>
+          <p>Quaerat, nulla dolore ea odit laboriosam a ab eligendi saepe hic adipisci laudantium neque dolores debitis sit dolorem in. Deserunt cupiditate, assumenda labore doloremque aspernatur atque corporis delectus maxime soluta!</p>
+          <h6>Omnis quam asperiores qui vel.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 20</h4>
+          <p>Molestiae, quidem! Ex inventore ut nostrum doloremque sit rem dolore modi cupiditate neque a numquam quis, dolores obcaecati maiores, laborum dolorum expedita in. Nulla, quibusdam eligendi quisquam cupiditate debitis architecto.</p>
+          <h6>Aliquam recusandae quod facilis amet.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 21</h4>
+          <p>Porro numquam perferendis repellendus tempore accusantium error officiis, ratione placeat illum? Omnis nostrum odio ea assumenda vitae eos quisquam amet a. Debitis deserunt laboriosam autem itaque deleniti omnis nobis porro!</p>
+          <h6>Esse, provident officiis. Rem, hic.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 22</h4>
+          <p>Sit quia molestiae dolor necessitatibus corrupti debitis culpa rerum magnam quam rem, ducimus amet vero, minus architecto quibusdam, esse voluptate? Dolores, in. Nesciunt reprehenderit placeat officia magni sint sunt culpa.</p>
+          <h6>Nam incidunt voluptate similique iste?</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 23</h4>
+          <p>Eum esse natus voluptates aliquid harum laboriosam, consequuntur corporis rem quia ipsam magnam eveniet ea dolore animi molestiae? Ipsa ea fugiat laborum laudantium, veniam quis voluptates voluptatibus recusandae nihil ab?</p>
+          <h6>Maxime, cum architecto. Magnam, architecto?</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 24</h4>
+          <p>Sequi enim explicabo veniam inventore expedita tenetur harum eligendi, magnam veritatis blanditiis facere a eos animi odit repellendus laborum distinctio corrupti nam maiores nisi id fugiat suscipit! Rem, dolor totam?</p>
+          <h6>A ab possimus dolorem ea.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-braces"></i></span>Proyecto 25</h4>
+          <p>Dolorum, culpa eius voluptatem incidunt consequuntur tenetur veniam tempore numquam consectetur illo quisquam nihil dolor facere earum esse nemo modi impedit repellendus cum voluptates vero pariatur inventore sunt suscipit. Natus!</p>
+          <h6>Quasi debitis vel optio delectus.</h6>
         </figure>
       </div>
       <div class="col-12 pt-4">
@@ -204,22 +380,34 @@
       </div>
       <div class="col">
         <figure>
-          <h3 class="badge">Ambiente 415</h3>
-          <h4><span class="me-2"><i class="bi bi-film"></i></span>Reel de Efectos Especiales Visuales VFX – Transformando la Narrativa Audiovisual</h4>
-          <p>Explora una muestra de habilidades de vanguardia en efectos especiales visuales (VFX) con este reel, donde cada efecto está diseñado y ejecutado para elevar la producción audiovisual. Desde simulaciones hiperrealistas hasta ambientes generados por CGI, este proyecto despliega un espectro completo de técnicas avanzadas en VFX que transforman la narrativa y cautivan la atención de la audiencia, cumpliendo con precisión los requerimientos de producción.</p>
-          <h6>Wilson Cárdenas González</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-film"></i></span>Estación estudio de fotografía </h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ducimus magni, ut vero accusamus laboriosam a. Sit veritatis vero eius dolorem quod asperiores harum! Sequi similique perspiciatis cum unde nihil?</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Ambiente 101B</h3>
+          <h4><span class="me-2"><i class="bi bi-film"></i></span>Estación estudio de video croma</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro corrupti, molestias consectetur corporis nam nostrum illum rerum. Voluptate quidem officiis quisquam ipsam repudiandae corporis aspernatur modi facere exercitationem eveniet?</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
         <figure>
           <h3 class="badge">Ambiente 415</h3>
-          <h4><span class="me-2"><i class="bi bi-film"></i></span>Set de grabación</h4>
-          <p>Montaje de un set de grabación con cámaras e iluminación</p>
-          <h6>Óscar Chala</h6>
+          <h4><span class="me-2"><i class="bi bi-film"></i></span>Estación podcast</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo repellendus ducimus, aspernatur aut sunt impedit dolor iure, voluptatum explicabo libero, minus aliquam optio nisi velit voluptates sequi totam tenetur.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 415</h3>
-          <h4><span class="me-2"><i class="bi bi-film"></i></span>Cortos finales</h4>
-          <p>Te invitamos a explorar una colección de cortometrajes finales de animación creados por nuestros aprendices en Animación 3D. Cada obra refleja un proceso completo de creatividad y técnica profesional: desde la idea inicial y el guion, hasta una impactante postproducción. ¡Ven y descubre historias únicas llenas de vida y talento!</p>
-          <h6>Wilson Cárdenas González</h6>
+          <h3 class="badge">Audiovisuales</h3>
+          <h4><span class="me-2"><i class="bi bi-film"></i></span>Cinemateca</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo repellendus ducimus, aspernatur aut sunt impedit dolor iure, voluptatum explicabo libero, minus aliquam optio nisi velit voluptates sequi totam tenetur.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+        </figure>
+        <figure>
+          <h3 class="badge">Pasillo piso 4</h3>
+          <h4><span class="me-2"><i class="bi bi-film"></i></span>Exposición fotografía y pintura</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo repellendus ducimus, aspernatur aut sunt impedit dolor iure, voluptatum explicabo libero, minus aliquam optio nisi velit voluptates sequi totam tenetur.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
       </div>
       <div class="col-12 pt-4">
@@ -227,197 +415,32 @@
       </div>
       <div class="col">
         <figure>
-          <h3 class="badge">Ambiente 500</h3>
-          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Carnavale. Yema de Fuego. Juyá. Pichi y Tuulu. Pepe's Job.</h4>
-          <p>Te invitamos a explorar una colección de cortometrajes finales de animación creados por nuestros aprendices en Animación 3D. Cada obra refleja un proceso completo de creatividad y técnica profesional: desde la idea inicial y el guion, hasta una impactante postproducción. ¡Ven y descubre historias únicas llenas de vida y talento!      </p>
-          <h6><span>Ficha 123456:</span> Lorem, ipsum. Lorem, ipsum.</h6>
+          <h3 class="badge">Ambiente ???</h3>
+          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Cortometrajes</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, obcaecati aliquam! Ad similique nemo incidunt, repudiandae quibusdam veritatis deserunt commodi minima, nihil non quae maiores optio quod architecto officia tempore.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 500</h3>
-          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Dummy Sena</h4>
-          <p>Descubre nuestras figuras y maniquíes articulados impresos en 3D, diseñados por y para nuestros aprendices en el marco de técnicas de Stop Motion y dibujo expresivo. Estas herramientas pedagógicas, son clave en la formación de tecnología en animación ayudándoles a desarrollar habilidades prácticas en su campo de aprendizaje.</p>
-          <h6><span>Ficha 123456:</span> Lorem, ipsum. Lorem, ipsum.</h6>
+          <h3 class="badge">Ágora A</h3>
+          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Comic Demostración</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos reprehenderit adipisci eius amet quidem ad omnis, eaque fuga nisi dolore consectetur incidunt et deleniti, magnam iste aliquam esse? Nostrum.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
         <figure>
-          <h3 class="badge">Ambiente 501</h3>
-          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Esquemas de iluminación y Render. Composición. Materiales y Texturas. Escultura Digital.</h4>
-          <p>Explora una colección de trabajos destacados en Composición, Iluminación, Render y Texturizado, realizados por nuestros talentosos aprendices del programa de Animación 3D. Esta exposición muestra el dominio técnico y la creatividad en cada detalle, reflejando el esfuerzo y la pasión por la animación digital de nuestros estudiantes.</p>
-          <h6><span>Ficha 123456:</span> Lorem, ipsum. Lorem, ipsum.</h6>
+          <h3 class="badge">Laboratorio Animación 101</h3>
+          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>Sistema de captura de movimiento</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos reprehenderit adipisci eius amet quidem ad omnis, eaque fuga nisi dolore consectetur incidunt et deleniti, magnam iste aliquam esse? Nostrum.</p>
+          <h6>Lorem ipsum dolor sit amet.</h6>
         </figure>
-        <figure>
-          <h3 class="badge">Ambiente 501</h3>
-          <h4><span class="me-2"><i class="bi bi-badge-3d"></i></span>YUREDO</h4>
-          <p>¡Sumérgete en el Arte del Filminuto Animado!
-            <br>Te invitamos a la Presentación Especial de un Filminuto Animado, una obra que explora y celebra la rica tradición oral indígena del Vaupés. Este proyecto fue realizado en colaboración con la comunidad indígena del Vaupés y el Centro de Formación SENA de Mitú, en un esfuerzo conjunto por preservar y compartir su invaluable legado cultural. <br>
-          Acompáñanos en esta experiencia única y descubre la tradición, la historia y la creatividad de un filminuto que, en solo 60 segundos, captura la esencia de una cultura ancestral.</p>
-          <h6><span>Ficha 123456:</span> Lorem, ipsum. Lorem, ipsum.</h6>
-        </figure>
-      </div>
-      <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="analisisds"><i class="bi bi-braces-asterisk"></i> Análisis y Desarrollo de Software</h3>
-      </div>
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>SICOMRE</h4>
-          <p>Descubre SICOMRE, un software innovador diseñado para optimizar la gestión de asistencia estudiantil, con funcionalidades avanzadas de localización en tiempo real, monitoreo y seguimiento de rutas escolares. Esta solución tecnológica diseñada por los aprendices, responde a las necesidades actuales de seguridad y eficiencia en el control de asistencia, donde se tendrá la oportunidad de conocer al detalle cómo se integró herramientas de geolocalización y análisis de datos para un seguimiento preciso y confiable. SICOMRE representa una respuesta efectiva y moderna para instituciones educativas, facilitando la administración de rutas y el bienestar estudiantil en cada etapa del recorrido.</p>
-          <h6>Israel Steven Camargo Menjura, Wendy Vanessa López Monroy, David Santiago Rubio Montero, Juan Jose Tarrifa Valencia</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>SIGECH</h4>
-          <p>Seguimiento a mantenimiento taxis y dar ubicación de talleres para reparación</p>
-          <h6>Andres Fabian Roa Vergara, Andres Felipe Angarita Baez, Jonathan Esneider Vaca Chaparro, Daniel Stiven Naranjo Ruiz</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>OPTIREST</h4>
-          <p>Software orientado a mejorar la eficiencia operativa en los restaurantes escolares de instituciones privadas (PAE - Programa de Alimentación Escolar)</p>
-          <h6>Brayan Daniel Bernal, Nicolás Barreto Reina, Ingrid Dayana Roa, José Mateo López</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>CUSTOMGIM</h4>
-          <p>Programa para generar las rutinas y repeticiones que debe realizar un cliente durante un determinado tiempo en el gimnasio</p>
-          <h6>Samuel Contreras, Juan Ramírez, Kevin Moreno, Julián Hernández</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>SAGESLITE</h4>
-          <p>Seguimiento a pacientes de un geriatrico</p>
-          <h6>Juan Carlos Berdugo Gómez, Luis Eduardo Moreno Parra, Juan David Rodriguez Tibaduiza</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>YAIRASHOP</h4>
-          <p>Sistema de información para ventas en línea</p>
-          <h6>Keinner Alberto Rivera Moscoso, Juan José Trujillo Moreno, Sergio Andres Perdomo</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Proyecto 7</h4>
-          <p>Sistema de información para la gestión de ventas y pedidos de la Cigarrería Colonial</p>
-          <h6>Darwin Santiago Lesmes Martin, David Santiago Murcia Ramirez</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>GEOAPP</h4>
-          <p>Sistema de información para la guía turística en Bogotá de la empresa Geo</p>
-          <h6>Daniel Gomez Reyes, Shelzea Dayana Fuquene Buitrago, Samuel Francisco Bayona Marroquin</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>GastroFusion Mila</h4>
-          <p>Sistema de información para la gestion de pedidos, productos, reservas y eventos para el restaurante GastroFusion Mila</p>
-          <h6>Joan Nicolas Fandiño Quecan, Nicole Sthephany Orjuela Avila, Johan Esteban Martinez Trujillo, Santiago Sanchez Vargas</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>QUIMIAP</h4>
-          <p>Sistema de información para la gestion de ventas y pedidos de la empresa QUIMIAP (QUIMIAP)</p>
-          <h6>Miguel Angel Ortiz Neira, Dairon Smith Chapid Moreno, Laura Elizabeth Albarracín Avellaneda, Samuel Steven Ardila Salvador</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Folira</h4>
-          <p>Sistema de información  red social (Folira)</p>
-          <h6>Annyi Catalina Cardenas Velasquez, David Alejandro Bautista Ramos</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>PLATTEA</h4>
-          <p>Sistema de informacion de ventas en linea (PLATTEA)</p>
-          <h6>Alexix Johan Orostegui Audor, Andres Felipe Suarez Ruiz, Danner Arias Munive , Carlos Mario Martinez Hoyos</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>AVA</h4>
-          <p>Sistema Integral de Gestión de Programación de talleres para Bienestar al aprendiz (AVA)</p>
-          <h6>Daniel Fernando Ramírez Lasso, Laura Camila Cardenas Avila, Karol Valentina Sierra Díaz</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Proyecto 14</h4>
-          <p>Sistema de información de ventas en linea y gestión de inventarios (Distribuidora de flores)</p>
-          <h6>Anyi Camila Mendivelso Rojas, Yennifer Dayana Bohorquez Gomez</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Entry Solution</h4>
-          <p>Sistema de Información para el control del registro de entrada y salida de elementos.</p>
-          <h6>Laura Daniela Bohorquez Pabon, Yulieth Fernanda Astaiza Bolaños</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Cyber-Copias</h4>
-          <p>Sistema de información para la gestion compras en línea de la papeleria Cyber-Copias.</p>
-          <h6>Nicolas Romero Lozano, Andres Felipe Cadena, Luis Alejandro Galicia</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Turismap</h4>
-          <p>Aplicación móvil para la gestión de turismo cultural para la zona de La Candelaria.</p>
-          <h6>Haider Alexander Medina Rativa, Diego Mauricio Zamudio Quevedo</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <h4><span class="me-2"><i class="bi bi-braces-asterisk"></i></span>Proyecto 18</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, delectus.</p>
-          <h6>Lorem ipsum dolor sit, Repudiandae est at cupiditate</h6>
-        </figure>
-      </div>
-      <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="videojuegos"><i class="bi bi-controller"></i> Desarrollo de Videojuegos y Entornos Interactivos</h3>
-      </div>
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 511</h3>
-          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Proyecto 1</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 511</h3>
-          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Proyecto 2</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 511</h3>
-          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Proyecto 3</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 511</h3>
-          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Proyecto 4</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
-        <figure>
-          <h3 class="badge">Ambiente 511</h3>
-          <h4><span class="me-2"><i class="bi bi-controller"></i></span>Proyecto Senasoft</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
-      </div>
-      <div class="col-12 pt-4">
-        <h3 class="text-center pt-3" id="mantenimiento"><i class="bi bi-pc-display"></i> Mantenimiento de Equipos de Computo</h3>
-      </div>
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 609</h3>
-          <h4><span class="me-2"><i class="bi bi-pc-display"></i></span>Brigada de Mantenimiento Equipos de Computo</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in labore nihil officiis beatae veniam cupiditate maiores quae deleniti magnam!</p>
-          <h6>Lorem ipsum dolor sit.</h6>
-        </figure>
+  
       </div>
     </div>
 	</main>
 	<footer class="container-fluid fondo">
 		<div class="row py-4">
-			<div class="col d-flex justify-content-center align-items-center">
-				<p class="m-0 text-white text-center foot">&copy; copyright 2025 <span class="mx-1">-</span> <strong>Inlogtic</strong> :: Feria del conocimiento del Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</p>
+			<div class="col">
+				<p class="m-0 text-white text-center foot"><strong>INLOGTIC</strong> :: INNOVACIÓN QUE SE COMUNICA, SE CREA Y SE MUEVE</p>
+				<p class="m-0 text-white text-center foot">Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</p>
 			</div>
 		</div>
 	</footer>
