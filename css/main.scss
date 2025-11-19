@@ -252,3 +252,27 @@ figure {
 
   text-shadow: -0.02em -0.03em 0 $color_sec, 0.02em 0.035em 0 #f4cf00;
 }
+.bienv {
+  margin-bottom: 0;
+}
+div > p {
+  font-size: 0.9em;
+}
+
+h5 {
+  font-family: $fuente_sec;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color_sec;
+}
+h5 ~ ul, h5 ~ p {
+  font-size: 0.9em;
+}
+.claro {
+  background: rgba($color: #ffffff, $alpha: 0.5);
+  padding: 0 1rem;
+  @media screen and (min-width: 768px) {
+    background: none;
+    padding: unset;
+  }
+}
