@@ -222,13 +222,17 @@ figure {
     span {
       font-weight: 700;
     }
+    a {
+      color: $color_sec;
+      font-size: 1.5em;
+    }
   }
   p {
     border-left: 4px solid $fondo_ppal;
     padding-left: 1rem;
     font-size: 0.9em;
   }
-  a {
+  > a {
     color: $color_sec;
     font-size: 2.5em;
     top: 0;

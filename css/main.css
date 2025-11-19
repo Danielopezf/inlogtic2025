@@ -252,12 +252,16 @@ figure h6 {
 figure h6 span {
   font-weight: 700;
 }
+figure h6 a {
+  color: rgba(230, 33, 106, 0.879);
+  font-size: 1.5em;
+}
 figure p {
   border-left: 4px solid rgba(5, 99, 120, 0.9);
   padding-left: 1rem;
   font-size: 0.9em;
 }
-figure a {
+figure > a {
   color: rgba(230, 33, 106, 0.879);
   font-size: 2.5em;
   top: 0;
