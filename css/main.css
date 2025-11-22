@@ -350,6 +350,18 @@ h5 ~ ul, h5 ~ p {
 
 iframe {
   max-width: 100%;
-  height: auto;
+  height: 25vh;
+}
+
+@media screen and (min-width: 768px) {
+  iframe {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  iframe {
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
