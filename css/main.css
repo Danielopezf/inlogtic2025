@@ -5,7 +5,6 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 100;
 }
@@ -22,19 +21,16 @@ header {
   background: url(../svg/inlogtic-logo.svg) center no-repeat;
   margin: 1rem auto 0;
 }
-
 @media screen and (min-width: 992px) {
   #logo-color {
     height: 270px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   #logo-color {
     height: 330px;
   }
 }
-
 @media screen and (max-width: 768px) {
   #logo-color {
     height: 250px;
@@ -47,25 +43,28 @@ header {
   background: url(../svg/inlogtic-logo.svg) center no-repeat;
   margin: 2rem auto 0;
 }
-
 @media screen and (max-width: 576px) {
   #logo-color-r {
     width: 320px;
-    height: calc(320px / 4);
+    height: 80px;
   }
 }
 
 .navbar a {
-  color: white !important;
+  color: black;
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .navbar a {
+    color: white !important;
+  }
+}
 
 .navbar-toggler, .navbar-toggler:focus {
   border: none;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .navbar-toggler i {
@@ -75,6 +74,7 @@ header {
 
 .navbar-brand {
   font-size: 1rem;
+  color: white !important;
 }
 
 .fondo {
@@ -85,11 +85,10 @@ header {
 .nav-link {
   margin: 0;
 }
-
 @media screen and (min-width: 768px) {
   .nav-link {
     margin: 0 2rem;
-    padding: 0 .95em;
+    padding: 0 0.95em;
   }
 }
 
@@ -100,21 +99,18 @@ h3 {
   color: rgba(5, 99, 120, 0.9);
   letter-spacing: 2px;
 }
-
 @media screen and (max-width: 1200px) {
   h3 {
     font-size: 3.5rem;
     letter-spacing: 1px;
   }
 }
-
 @media screen and (max-width: 992px) {
   h3 {
     font-size: 3rem;
     letter-spacing: 1px;
   }
 }
-
 h3 i {
   color: rgba(230, 33, 106, 0.579);
 }
@@ -122,23 +118,19 @@ h3 i {
 .asistentes thead td {
   width: 33.3333%;
 }
-
 .asistentes thead td i {
   font-size: 3.5rem;
   color: rgba(5, 99, 120, 0.55);
 }
-
 .asistentes th {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.3rem;
   color: rgba(230, 33, 106, 0.879);
 }
-
 .asistentes td, .asistentes th {
   text-align: center;
   font-weight: bold;
 }
-
 .asistentes td {
   font-size: 3rem;
   color: rgba(5, 99, 120, 0.9);
@@ -153,17 +145,14 @@ h3 i {
   width: 100%;
   color: white;
 }
-
 @media screen and (min-width: 768px) {
   .faltan {
     width: 75%;
   }
 }
-
 .faltan .h1 {
   text-align: center;
 }
-
 .faltan tbody td {
   width: 25%;
   font-size: 4rem;
@@ -172,26 +161,22 @@ h3 i {
   background: rgba(255, 255, 255, 0.7);
   color: rgba(5, 99, 120, 0.9);
 }
-
 @media screen and (max-width: 1200px) {
   .faltan tbody td {
     font-size: 3.5rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .faltan tbody td {
     font-size: 2.5rem;
   }
 }
-
 .faltan tfoot td {
   font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
   padding-top: 0.8rem;
 }
-
 @media screen and (max-width: 576px) {
   .faltan tfoot td {
     font-size: 0.9rem;
@@ -212,19 +197,16 @@ h3 i {
   background-size: 80%;
   height: 300px;
 }
-
 @media screen and (min-width: 768px) {
   .fondo_banner {
     height: 400px;
   }
 }
-
 @media screen and (min-width: 992px) {
   .fondo_banner {
     height: 550px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .fondo_banner {
     height: 700px;
@@ -248,7 +230,6 @@ figure {
   border: 1px solid rgba(5, 99, 120, 0.9);
   margin-bottom: 1.75rem;
 }
-
 figure h3.badge {
   text-transform: uppercase;
   background: linear-gradient(60deg, rgba(5, 99, 120, 0.9) 10%, rgba(230, 33, 106, 0.6) 90%);
@@ -256,44 +237,36 @@ figure h3.badge {
   padding: 0.35em 0.5em 0.2em;
   letter-spacing: normal;
 }
-
 figure h3.badge i {
   font-size: 2em;
   color: rgba(230, 33, 106, 0.579) !important;
 }
-
 figure h4 {
   font-size: 1.7rem;
   font-weight: 700;
   color: rgba(5, 99, 120, 0.9);
   text-transform: uppercase;
 }
-
 figure h4 span i {
   font-size: 1.5rem;
   color: rgba(5, 99, 120, 0.65);
 }
-
 figure h6 {
   text-transform: capitalize;
   font-size: 0.7em;
 }
-
 figure h6 span {
   font-weight: 700;
 }
-
 figure h6 a {
   color: rgba(230, 33, 106, 0.879);
   font-size: 1.5em;
 }
-
 figure p {
   border-left: 4px solid rgba(5, 99, 120, 0.9);
   padding-left: 1rem;
   font-size: 0.9em;
 }
-
 figure > a {
   color: rgba(230, 33, 106, 0.879);
   font-size: 2.5em;
@@ -312,8 +285,7 @@ figure > a {
   text-transform: uppercase;
   position: relative;
   color: #78c5fb;
-  -webkit-transform: rotate(-0.5deg);
-          transform: rotate(-0.5deg);
+  transform: rotate(-0.5deg);
   text-shadow: -0.02em -0.03em 0 rgba(230, 33, 106, 0.879), 0.02em 0.035em 0 #f4cf00;
 }
 
@@ -337,10 +309,9 @@ h5 ~ ul, h5 ~ p {
 }
 
 .claro {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.95);
   padding: 0 1rem;
 }
-
 @media screen and (min-width: 768px) {
   .claro {
     background: none;
@@ -352,16 +323,13 @@ iframe {
   max-width: 100%;
   height: 25vh;
 }
-
 @media screen and (min-width: 768px) {
   iframe {
     height: 40vh;
   }
 }
-
 @media screen and (min-width: 992px) {
   iframe {
     height: 50vh;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
